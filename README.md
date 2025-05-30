@@ -1,13 +1,13 @@
 # Secure BIP39 Seed Phrase Generator
 
-A cryptographically secure BIP39 seed phrase generator for cryptocurrency wallets, featuring maximum entropy and robust security measures.
+A cryptographically secure BIP39 seed phrase generator for bitcoin wallets, featuring maximum entropy and robust security measures.
 
 ## Features
 
 - ✨ Generate 12 or 24-word BIP39 seed phrases
 - 🔒 Multiple entropy sources for maximum security
 - 🧪 Statistical verification of entropy quality
-- 💻 Completely offline operation
+- 💻 Completely offline operation (make sure you generate seeds while on device not connected to internet)
 - 🛡️ Memory zeroing after use
 - ✅ Comprehensive test suite
 
