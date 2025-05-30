@@ -1,0 +1,39 @@
+[package]
+name = "bip39_generator"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name"]
+description = "A secure BIP39 seed phrase generator for cryptocurrency wallets"
+
+[lib]
+name = "bip39_generator"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bip39_generator"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.8.5"
+clap = { version = "4.5.1", features = ["derive"] }
+once_cell = "1.19.0"
+thiserror = "1.0.57"
+anyhow = "1.0.80"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+colored = "2.1.0"
+config = { version = "0.14.0", features = ["yaml"] }
+serde = { version = "1.0.197", features = ["derive"] }
+chrono = { version = "0.4.34", features = ["serde"] }
+dirs = "5.0.1"
+serde_yaml = "0.9.32"
+hmac = "0.12.1"
+pbkdf2 = "0.12.2"
+sha2 = { version = "0.10.8", features = ["std"] }
+
+[dev-dependencies]
+proptest = "1.4.0"
+test-case = "3.3.1"
+assert_cmd = "2.0.14"
+predicates = "3.1.0"
+tempfile = "3.10.1"
